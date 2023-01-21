@@ -1,0 +1,765 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --red: #ce1212;
+  --gray: #53595e;
+  --section: #f8e8e8;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+body .btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 0.8rem 2.5rem;
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  color: white;
+  transition: 0.3s;
+}
+body .btn:hover {
+  color: white;
+  border: 1px solid var(--red);
+  background-color: #da2a2a;
+  transform: scale(1.1);
+}
+body .btn:focus {
+  outline: none !important;
+  color: white;
+  border: 1px solid var(--red);
+  background-color: #da4646;
+}
+body .btn:active {
+  outline: none !important;
+  color: white;
+  border: 1px solid var(--red);
+  background-color: #da4646;
+}
+body #btn2 {
+  border: none;
+  color: black;
+  background: none;
+}
+body #btn2 span {
+  color: var(--red);
+  margin-right: 0.5rem;
+  border: 2px solid var(--red);
+  padding: 6px;
+  border-radius: 50%;
+}
+body p {
+  font-size: 16px;
+  color: var(--gray);
+}
+body .small-heading {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: var(--gray);
+}
+body .medium-heading {
+  font-family: "Amatic SC", cursive;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+body .red {
+  color: var(--red);
+}
+
+.navbar {
+  background-color: white;
+  padding: 1.6rem 0 1rem 0;
+}
+.navbar .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+.navbar .nav li {
+  margin-right: 1rem;
+}
+.navbar .nav li a {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.navbar .nav li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 1rem;
+  top: 4rem;
+  background-color: var(--red);
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar .nav li a:hover::before {
+  width: 80%;
+}
+
+.home {
+  background-color: var(--section);
+  margin-top: 9rem;
+}
+.home .home-heading {
+  font-size: 64px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.home .home-text {
+  margin-bottom: 2.5rem;
+  font-size: 16px;
+}
+.home .home-left {
+  padding: 10rem 5rem;
+}
+.home .home-right {
+  padding: 6rem 0;
+}
+.home .home-right img {
+  width: 70%;
+  margin-left: 14rem;
+}
+
+.about {
+  padding: 7rem 0;
+}
+.about .about-left {
+  width: 50%;
+  height: 760px;
+  background: url(../images/about-img-1.jpg);
+  background-size: cover;
+}
+.about .about-left .text {
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 0 10rem;
+  margin: 0 -7rem 5rem 5rem;
+}
+.about .about-left .text h3 {
+  font-weight: 600;
+}
+.about .about-left .text h2 {
+  color: var(--red);
+  font-weight: 700;
+}
+.about .about-right {
+  margin-left: 4rem;
+  text-align: justify;
+}
+.about .about-right li {
+  list-style: disc;
+  font-style: italic;
+  line-height: 1.6;
+}
+.about .about-right .play-div {
+  width: 100%;
+  height: 345px;
+  background: url(../images/about-img-2.jpg);
+  background-size: cover;
+}
+.about .about-right .play-div i {
+  margin: 32% 0 0 42%;
+  color: white;
+  padding: 20px;
+  font-size: 2rem;
+  background-color: var(--red);
+  border-radius: 50%;
+  box-shadow: 0 0 30px 15px white;
+  transition: 0.3s;
+}
+.about .about-right .play-div i:hover {
+  transform: scale(1.1);
+}
+
+.choose {
+  background-color: var(--section);
+  padding: 7rem 0;
+}
+.choose .red-card {
+  background-color: var(--red);
+  color: white;
+  padding: 1rem 4rem 2rem;
+  margin-right: 2.5rem;
+  width: 30%;
+}
+.choose .red-card h1 {
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.choose .red-card p {
+  color: white;
+  margin-bottom: 2.5rem;
+}
+.choose .red-card .btn3 {
+  background-color: rgba(255, 255, 255, 0.336);
+  transition: all ease-in-out 0.4s;
+  margin-left: 20%;
+}
+.choose .red-card .btn3:hover {
+  background-color: white;
+  color: var(--red);
+}
+.choose .card {
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  height: 63vh;
+  margin: 2.5rem 2.5rem 0 0;
+  padding: 4.5rem;
+  transition: 0.3s;
+}
+.choose .card h2 {
+  margin-bottom: 2.5rem;
+  font-size: 20px;
+}
+.choose .card p {
+  margin-bottom: 2.5rem;
+  font-size: 15px;
+}
+.choose .card i {
+  color: var(--red);
+  background-color: var(--section);
+  padding: 14px;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+.choose .card:hover {
+  transform: scale(1.1);
+}
+
+.banner {
+  background: url(../images/banner.jpg);
+  background-color: rgb(139, 135, 135);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 12rem 5rem;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 48px;
+  color: rgb(236, 233, 233);
+  font-weight: 700;
+}
+.banner h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(236, 233, 233);
+}
+
+.menu {
+  padding: 7rem 0;
+  text-align: center;
+}
+.menu .nav-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.menu .nav-pills li a {
+  background: none;
+  margin-right: 1.5rem;
+  font-size: 18px;
+  color: black;
+  border-radius: 0;
+  border-bottom: 2px solid var(--section);
+  transition: all 0.3s ease-in-out 0s;
+}
+.menu .nav-pills li a:hover {
+  background: none;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+}
+.menu .nav-pills li a:focus {
+  background: none;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+}
+.menu .nav-pills li a:active {
+  background: none;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+}
+.menu .nav-pills .active a {
+  background: none;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+}
+.menu .tab-content .menu-title {
+  font-size: 36px;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.menu .tab-content img {
+  width: 70%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu .tab-content img:hover {
+  transform: scale(1.1);
+}
+.menu .tab-content p {
+  color: var(--gray);
+}
+.menu .tab-content .price {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.testimonials {
+  padding: 7rem 0;
+  background-color: var(--section);
+}
+.testimonials .media {
+  margin: 0;
+  padding: 0;
+  padding: 2.5rem;
+  transition: 0.3s;
+}
+.testimonials .media:hover {
+  transform: scale(1.05);
+  background-color: rgb(253, 246, 246);
+}
+.testimonials p {
+  font-style: italic;
+}
+.testimonials h3 {
+  font-weight: 600;
+}
+.testimonials h6 {
+  font-size: 14px;
+  color: var(--gray);
+}
+.testimonials i {
+  color: orange;
+}
+.testimonials img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.events {
+  padding: 7rem 0;
+}
+.events .col-lg-4 {
+  height: 600px;
+  width: 31%;
+  margin-right: 2.7rem;
+}
+.events .col-lg-4:hover {
+  background-blend-mode: normal;
+  transition: all ease-in-out 0.4s;
+}
+.events .text {
+  position: absolute;
+  bottom: 0;
+}
+.events .text .party {
+  font-weight: 700;
+  color: white;
+}
+.events .text h2 {
+  -webkit-text-decoration: underline var(--red);
+          text-decoration: underline var(--red);
+  color: white;
+}
+.events .text p {
+  color: white;
+  font-size: 16px;
+}
+.events .event {
+  background: url(../images/events-1.jpg);
+  background-color: rgb(139, 135, 135);
+  background-blend-mode: multiply;
+}
+.events .event1 {
+  background: url(../images/events-2.jpg);
+  background-color: rgb(139, 135, 135);
+  background-blend-mode: multiply;
+}
+.events .event2 {
+  background: url(../images/events-3.jpg);
+  background-color: rgb(139, 135, 135);
+  background-blend-mode: multiply;
+}
+
+.chefs {
+  padding: 7rem 0;
+  background-color: var(--section);
+}
+.chefs .col-md-4 {
+  height: 600px;
+  width: 31%;
+  margin-right: 2.7rem;
+  transition: 0.3s;
+}
+.chefs .col-md-4 svg {
+  position: absolute;
+  top: 29rem;
+  left: 0;
+}
+.chefs .col-md-4 .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--gray);
+  background-color: white;
+  text-align: center;
+  padding: 2.5rem;
+}
+.chefs .col-md-4 .text h3 {
+  font-weight: 700;
+}
+.chefs .col-md-4 .text h5 {
+  font-size: 14px;
+  color: gray;
+}
+.chefs .col-md-4 .text p {
+  font-size: 15px;
+}
+.chefs .col-md-4:hover {
+  transform: scale(1.1);
+}
+.chefs .chef-1 {
+  background: url(../images/chefs-1.jpg);
+  background-size: contain;
+}
+.chefs .chef-2 {
+  background: url(../images/chefs-2.jpg);
+  background-size: contain;
+}
+.chefs .chef-3 {
+  background: url(../images/chefs-3.jpg);
+  background-size: contain;
+}
+
+.book {
+  padding: 7rem 0;
+}
+.book .book-left img {
+  width: 105%;
+  height: 500px;
+}
+.book .book-right {
+  background-color: #fff7f7;
+  height: 500px;
+  padding: 5rem;
+}
+.book .book-right input[type=text],
+.book .book-right input[type=number] {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border: 1px solid rgb(190, 186, 186);
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  width: 30%;
+}
+.book .book-right input[type=text]:focus,
+.book .book-right input[type=number]:focus {
+  border: 1px solid var(--red);
+  outline: none;
+}
+.book .book-right textarea {
+  width: 96%;
+  border: 1px solid rgb(190, 186, 186);
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.book .book-right textarea:focus {
+  border: 1px solid var(--red);
+  outline: none;
+}
+.book .book-right .btn {
+  margin-left: 40%;
+}
+
+.gallery {
+  padding: 7rem 0;
+  background-color: var(--section);
+}
+.gallery img {
+  width: 100%;
+}
+
+.contact {
+  padding: 7rem 0;
+}
+.contact .col-sm-6 {
+  background-color: var(--section);
+  margin-top: 2rem;
+  margin-left: 3rem;
+  width: 46%;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact i {
+  color: white;
+  background-color: var(--red);
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+.contact h4 {
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #1f1f24;
+  padding: 7rem 0 2rem;
+}
+.footer .col-md-3 {
+  display: flex;
+}
+.footer svg {
+  width: 90%;
+  border: 1px solid #a1a1a1;
+  padding: 10px;
+  margin: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer svg:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+.footer svg:hover path {
+  fill: white;
+}
+.footer i {
+  font-size: 2rem;
+  color: #bebaba;
+}
+.footer h4 {
+  color: white;
+}
+.footer p {
+  color: #bebaba;
+  font-size: 14px;
+}
+.footer .container {
+  border-bottom: 1px solid rgba(190, 186, 186, 0.2745098039);
+  margin-bottom: 2.5rem;
+}
+.footer .last-line {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .navbar #btn2 {
+    display: none;
+  }
+  .home {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .navbar #btn {
+    display: none;
+  }
+  .home {
+    margin-top: 7rem;
+  }
+}
+@media only screen and (max-width: 1298px) {
+  .navbar #btn2 {
+    display: none;
+  }
+  .home {
+    margin-top: 7rem;
+  }
+}
+@media only screen and (max-width: 1203px) {
+  .navbar .nav li {
+    margin-right: -0.4rem;
+  }
+  .home .home-left {
+    padding: 10rem 3rem;
+  }
+  .about .about-left .text {
+    padding: 1rem 5rem;
+  }
+  .about .about-right .play-div {
+    height: 250px;
+  }
+  .choose .card {
+    width: 100%;
+    height: 100%;
+  }
+  .events .col-lg-4 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .chefs .col-md-4 {
+    width: 30%;
+    background-size: cover;
+    background-position-x: 35%;
+  }
+  .book .book-left {
+    width: 97%;
+  }
+  .book .book-right {
+    margin-left: 1.5rem;
+  }
+  .contact .col-lg-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1095px) {
+  .navbar .btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1032px) {
+  .navbar .nav li {
+    margin-right: -0.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar .nav li {
+    margin-right: -0.7rem;
+  }
+  .home .home-left {
+    text-align: center;
+  }
+  .about .about-left {
+    width: 100%;
+  }
+  .about .about-left .text {
+    padding: 1rem 18rem;
+  }
+  .about .about-right .play-div {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .about .about-right .play-div i {
+    margin-bottom: 20rem;
+  }
+  .choose .red-card {
+    width: 100%;
+    text-align: center;
+  }
+  .choose .red-card .btn {
+    margin-left: -4rem;
+  }
+  .chefs .col-md-4 {
+    width: 100%;
+    background-size: contain;
+    margin-bottom: 2rem;
+  }
+  .book .book-right {
+    height: 100%;
+  }
+  .book .book-right input[type=text],
+.book .book-right input[type=number] {
+    width: 46%;
+  }
+  .footer .svgs {
+    display: none;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .navbar .nav li {
+    margin-right: -0.9rem;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .navbar .nav li {
+    margin-right: -1rem;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .navbar .nav li {
+    margin-right: -1.2rem;
+  }
+}
+@media only screen and (max-width: 803px) {
+  .navbar .nav li {
+    margin-right: -1rem;
+  }
+  .navbar .nav li a {
+    font-size: 1.3rem;
+  }
+  .navbar .navbar-header button {
+    border: none;
+  }
+  .home .home-right img {
+    margin-left: 15%;
+  }
+  .about .about-left {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .about-left .text {
+    margin-right: 10%;
+    padding: 1rem 5rem;
+  }
+  .about .about-right {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .banner .col-sm-3 {
+    margin-bottom: 5rem;
+  }
+  .choose .col-md-4 {
+    margin-left: 15%;
+    width: 70%;
+  }
+  .chefs .col-md-4 {
+    margin-left: 15%;
+    width: 70%;
+  }
+  .book .book-left,
+.book .book-right {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .book .book-left input[type=text],
+.book .book-left input[type=number],
+.book .book-right input[type=text],
+.book .book-right input[type=number] {
+    width: 100%;
+  }
+  .book .book-right {
+    margin-left: 12%;
+  }
+  .book .book-right .btn {
+    margin-left: 20%;
+  }
+  .contact .row .col-sm-6 {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .contact .row .col-sm-6 .col-sm-2 {
+    width: 20%;
+  }
+  .contact .row .col-sm-6 .col-sm-10 {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 562px) {
+  .footer .col-sm-3 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
